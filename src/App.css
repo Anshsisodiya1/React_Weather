@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f7;
+  background: linear-gradient(to bottom right, #3a7bd5, #00d2ff);
+}
+
+.app {
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.app-title {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+.city-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.temperature,
+.description {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.weather-image {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .app {
+    width: 80%;
+  }
+
+  .app-title {
+    font-size: 1.8rem;
+  }
+
+  .input {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+
+  .temperature,
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    width: 90%;
+  }
+
+  .app-title {
+    font-size: 1.6rem;
+  }
+
+  .input {
+    width: 60%;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+
+  .temperature,
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .app-title {
+    font-size: 1.4rem;
+  }
+
+  .input {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+  }
+
+  .temperature,
+  .description {
+    font-size: 1rem;
+  }
+
+  .weather-image {
+    width: 80px;
+    height: 80px;
+  }
+}
